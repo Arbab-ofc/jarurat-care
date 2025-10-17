@@ -34,7 +34,7 @@
 
 ## 🚀 Live Demo & Tech Stack
 
-### 🌐 **[View Live Demo ↗️](your-deployment-url-here)**
+### 🌐 **[View Live Demo ↗️](https://jarurat-care-sepia.vercel.app/)**
 
 ### 🛠️ Technology Highlights
 
