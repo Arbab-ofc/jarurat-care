@@ -8,16 +8,18 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative  border-t border-gray-200 bg-white text-gray-700">
+    <footer className="relative border-t border-gray-200 bg-white text-gray-700">
       
       <AnimatedGradientStrip reduce={shouldReduceMotion} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           
+          
           <div className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-2xl bg-emerald-500/10 grid place-items-center ring-1 ring-emerald-500/30">
-              <span className="text-emerald-600 font-semibold">J</span>
+              
+              <span className="text-emerald-600 font-semibold">JC</span>
             </div>
             <div className="leading-tight">
               <div className="text-base font-semibold text-gray-900">
@@ -50,7 +52,6 @@ export default function Footer() {
             >
               About
             </Link>
-            
             <span className="font-semibold text-emerald-600">
               Created & Designed by Arbab Arshad
             </span>
@@ -58,12 +59,25 @@ export default function Footer() {
 
           
           <div className="flex items-center gap-3">
-            <IconButton label="LinkedIn" href="https://www.linkedin.com/in/arbab-ofc/" Icon={FiLinkedin} />
-            <IconButton label="GitHub" href="https://github.com/Arbab-ofc" Icon={FiGithub} />
-            <IconButton label="Email" href="mailto:arbabprvt@gmail.com" Icon={FiMail} />
+            <IconButton
+              label="LinkedIn"
+              href="https://www.linkedin.com/in/arbab-ofc/"
+              Icon={FiLinkedin}
+            />
+            <IconButton
+              label="GitHub"
+              href="https://github.com/Arbab-ofc"
+              Icon={FiGithub}
+            />
+            <IconButton
+              label="Email"
+              href="mailto:arbabprvt@gmail.com"
+              Icon={FiMail}
+            />
           </div>
         </div>
 
+        
         <div className="mt-6 text-xs text-gray-500">
           © {year} Jarurat Care. All rights reserved.
         </div>
@@ -87,7 +101,6 @@ function IconButton({ label, Icon, href }) {
 }
 
 function AnimatedGradientStrip({ reduce }) {
-  
   if (reduce) {
     return (
       <div
@@ -101,7 +114,6 @@ function AnimatedGradientStrip({ reduce }) {
     );
   }
 
-  
   return (
     <motion.div
       aria-hidden="true"

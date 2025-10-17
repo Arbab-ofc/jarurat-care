@@ -82,17 +82,17 @@ export default function PatientForm({ mode = "add", initial, onSubmit, onCancel 
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
-          <label className="text-sm text-slate-300">Full Name*</label>
+          <label className="text-sm text-black-300">Full Name*</label>
           <input
             name="name"
             value={form.name}
             onChange={handleChange}
-            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-slate-100 placeholder-slate-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-black-100 placeholder-black-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
             placeholder="e.g., Anita Sharma"
           />
         </div>
         <div>
-          <label className="text-sm text-slate-300">Age*</label>
+          <label className="text-sm text-black-300">Age*</label>
           <input
             name="age"
             type="number"
@@ -100,7 +100,7 @@ export default function PatientForm({ mode = "add", initial, onSubmit, onCancel 
             max="120"
             value={form.age}
             onChange={handleChange}
-            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-slate-100 placeholder-slate-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-black-100 placeholder-black-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
             placeholder="e.g., 34"
           />
         </div>
@@ -109,22 +109,22 @@ export default function PatientForm({ mode = "add", initial, onSubmit, onCancel 
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
-          <label className="text-sm text-slate-300">Contact (Phone/Email)*</label>
+          <label className="text-sm text-black-300">Contact (Phone/Email)*</label>
           <input
             name="contact"
             value={form.contact}
             onChange={handleChange}
-            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-slate-100 placeholder-slate-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-black-100 placeholder-black-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
             placeholder="+91-98xxxxxx12 or email"
           />
         </div>
         <div>
-          <label className="text-sm text-slate-300">Gender</label>
+          <label className="text-sm text-black-300">Gender</label>
           <select
             name="gender"
             value={form.gender}
             onChange={handleChange}
-            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-black-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
           >
             <option value="M">Male</option>
             <option value="F">Female</option>
@@ -136,36 +136,36 @@ export default function PatientForm({ mode = "add", initial, onSubmit, onCancel 
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
-          <label className="text-sm text-slate-300">Address</label>
+          <label className="text-sm text-black-300">Address</label>
           <input
             name="address"
             value={form.address}
             onChange={handleChange}
-            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-slate-100 placeholder-slate-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-black-100 placeholder-black-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
             placeholder="City / Area"
           />
         </div>
         <div>
-          <label className="text-sm text-slate-300">Assignment Date*</label>
+          <label className="text-sm text-black-300">Assignment Date*</label>
           <input
             name="assignmentDate"
             type="date"
             value={form.assignmentDate}
             onChange={handleChange}
-            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-slate-100 placeholder-slate-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+            className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-black-100 placeholder-black-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
           />
         </div>
       </div>
 
       
       <div>
-        <label className="text-sm text-slate-300">Notes</label>
+        <label className="text-sm text-black-300">Notes</label>
         <textarea
           name="notes"
           value={form.notes}
           onChange={handleChange}
           rows={3}
-          className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-slate-100 placeholder-slate-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+          className="mt-1 w-full px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-black-100 placeholder-black-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
           placeholder="Condition, observations, etc."
         />
       </div>
@@ -189,7 +189,7 @@ export default function PatientForm({ mode = "add", initial, onSubmit, onCancel 
         </div>
 
         <div>
-          <label className="text-sm text-slate-300">Profile Picture</label>
+          <label className="text-sm text-black-300">Profile Picture</label>
           <div className="mt-1 flex flex-col gap-2">
             
             <input
@@ -197,7 +197,7 @@ export default function PatientForm({ mode = "add", initial, onSubmit, onCancel 
               type="file"
               accept="image/*"
               onChange={handleFile}
-              className="block w-full text-sm text-slate-300 file:mr-3 file:rounded-md file:border file:border-white/10 file:bg-white/10 file:px-3 file:py-2 file:text-slate-100 hover:file:bg-white/20"
+              className="block w-full text-sm text-black-300 file:mr-3 file:rounded-md file:border file:border-white/10 file:bg-white/10 file:px-3 file:py-2 file:text-black-100 hover:file:bg-white/20"
             />
             
             <input
@@ -208,7 +208,7 @@ export default function PatientForm({ mode = "add", initial, onSubmit, onCancel 
                 setPreview(e.target.value);
               }}
               placeholder="or paste an image URL"
-              className="flex-1 px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-slate-100 placeholder-slate-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+              className="flex-1 px-3 py-2 rounded-xl bg-white/10 border border-white/10 text-black-100 placeholder-black-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
             />
             {uploadError && (
               <p className="text-xs text-rose-300">{uploadError}</p>

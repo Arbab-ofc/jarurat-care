@@ -171,8 +171,8 @@ export default function Modal({
               "w-[92vw] sm:w-auto",
               SIZE_MAP[size] || SIZE_MAP.md,
               "rounded-2xl border border-white/10",
-              "bg-white/95 text-gray-900 shadow-2xl backdrop-blur-md",
-              "dark:bg-white/[0.06] dark:text-slate-100",
+              "bg-white/95 text-gray-900 dark:text-white shadow-2xl backdrop-blur-md",
+              "dark:bg-white/[0.06] dark:text-black-100",
               "p-5 sm:p-6",
               "focus:outline-none",
             ].join(" ")}
